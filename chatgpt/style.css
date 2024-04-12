@@ -1,0 +1,48 @@
+/* Custom styles for your website */
+
+/* Header styles */
+.name {
+    padding: 10px 0;
+}
+
+.name img {
+    width: 55px;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+/* Form styles */
+.card {
+    margin-top: 50px;
+}
+
+/* Image carousel styles */
+.carousel-item img {
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .name {
+        padding: 10px;
+    }
+
+    .name img {
+        width: 40px;
+    }
+
+    .card {
+        margin-top: 30px;
+    }
+}
