@@ -1,0 +1,48 @@
+.navTabs {
+    /*Your Code goes here*/
+list-style: none;
+display: flex;
+justify-content: flex-start;
+background-color: black;
+    /*---*/
+    gap: 30px;
+}
+
+.nav-item:hover {
+    background-color:  #454141;
+    /*---*/
+}
+
+.nav-item {
+    /*Your Code goes here*/
+
+color: white;
+cursor: pointer;
+padding: 6px;
+    /*---*/
+}
+
+/*-----*/
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+table {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+ul {
+    padding-left: 20px;
+}
