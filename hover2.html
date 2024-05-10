@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+body {
+	margin: 0;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.card {
+	position: relative;
+	width: 256px;
+	height: 384px;
+	margin-left: 32px;
+	margin-bottom: 32px;
+	
+	cursor: pointer;
+	
+	overflow: hidden;
+	box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.05), 2px 4px 32px 0 rgba(0,0,0,0.1), 0 0 64px 0 rgba(0,0,0,0.2);
+	
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	font-weight: 300;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	
+	transition: transform 300ms ease;
+	
+	.image {
+		position: absolute;
+		top: 0; right: 0; bottom: 70px; left: 0;
+		background-position: center;
+		background-size: cover;
+		transition: bottom 300ms ease;
+	}
+	
+	.content {
+		position: absolute;
+		z-index: 10;
+		padding: 0.5rem;
+		height: 100%;
+		
+		background: white;
+		
+		transform: translateY(314px);
+		transition: transform 300ms ease;
+		
+		.header {
+			font-size: 1.5rem;
+			font-weight: 700;
+		}
+		
+		.meta {
+			font-size: 0.8rem;
+			color: #888;
+			margin-bottom: 0.5rem;
+		}
+		
+		.description {
+			opacity: 0;
+			transition: opacity 500ms ease 100ms;
+		}
+	}
+	
+	&:hover {
+		transform: translateY(-16px);
+		
+		.image {
+			bottom: 280px;
+		}
+		
+		.content {
+			transform: translateY(104px);
+			.description {
+				opacity: 1;
+			}
+		}
+	}
+}
+    </style>
+</head>
+<body>
+    
+<div class="card">
+    <div class="image" style="background-image: url(https://source.unsplash.com/random/256x383)"></div>
+    <div class="content">
+        <div class="header">Cool Title</div>
+        <div class="meta">By Mubanga</div>
+        <div class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis maiores expedita exercitationem rerum, voluptate laudantium nostrum ratione aliquam adipisci, vitae soluta repellat cupiditate, inventore ipsa distinctio quidem assumenda voluptates eligendi.</div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="image" style="background-image: url(https://source.unsplash.com/random/256x384)"></div>
+    <div class="content">
+        <div class="header">Cool Title</div>
+        <div class="meta">By Mubanga</div>
+        <div class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis maiores expedita exercitationem rerum, voluptate laudantium nostrum ratione aliquam adipisci, vitae soluta repellat cupiditate, inventore ipsa distinctio quidem assumenda voluptates eligendi.</div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="image" style="background-image: url(https://source.unsplash.com/random/256x385)"></div>
+    <div class="content">
+        <div class="header">Cool Title</div>
+        <div class="meta">By Mubanga</div>
+        <div class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis maiores expedita exercitationem rerum, voluptate laudantium nostrum ratione aliquam adipisci, vitae soluta repellat cupiditate, inventore ipsa distinctio quidem assumenda voluptates eligendi.</div>
+    </div>
+</div>
+
+</body>
+</html>
