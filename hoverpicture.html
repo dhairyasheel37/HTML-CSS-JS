@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #2d3548;
+}
+
+.cards { 
+    padding: 40px;
+    display: grid;
+    gap: 30px;
+    @media (min-width: 700px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    @media (min-width: 1024px) {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        gap: 40px;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    .card {
+        color: #fff;
+        cursor: pointer;
+        position: relative;
+        border-radius: 20px;
+    }
+    .card__image {
+        width: 100%;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+    .card__category {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    .card__title {
+        letter-spacing: 1px;
+    }
+    .card__text {
+        line-height: 1.5;
+    }
+    .card__content{
+        left: 0;
+        position: absolute;
+        top: 0;
+        padding: 20px;
+    }
+    .card__content{
+        display: none;
+    }
+    .card:hover .card__content {
+        display: block;
+        background-color: #1c92e08f;
+        height: 420px;
+        width: 100%;
+        border-radius: 20px;
+    }
+}
+    </style>
+</head>
+<body>
+    
+<div class="cards">
+
+    <div class="card card-item-01">
+    <div class="card__image-wrapper">
+    <img class="card__image" src="https://images.pexels.com/photos/4318822/pexels-photo-4318822.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="Desert" width="280" height="420">
+    </div>
+    <div class="card__content">
+        <h5 class="card__category">Category</h5>
+        <h2 class="card__title">Title Goes Here</h2>
+        <p class="card__text">Lorem ipsum dolor sit amet consectetur    adipisicing elit nulla cumque. massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at tempor commodo ullamcorper.</p>
+    </div>  
+    </div>
+    
+    <div class="card card-item-02">
+    <div class="card__image-wrapper">
+    <img class="card__image" src="https://images.pexels.com/photos/1785493/pexels-photo-1785493.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="Mountains" width="280" height="420">
+    </div>
+    <div class="card__content">
+        <h5 class="card__category">Category</h5>
+        <h2 class="card__title">Title Goes Here</h2>
+        <p class="card__text">Lorem ipsum dolor sit amet consectetur    adipisicing elit nulla cumque. massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at tempor commodo ullamcorper.</p>
+    </div>
+    </div>
+    
+    <div class="card card-item-03">
+    <div class="card__image-wrapper">
+    <img class="card__image" src="https://images.pexels.com/photos/2770933/pexels-photo-2770933.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="Road" width="280" height="420">
+    </div>
+    <div class="card__content">
+        <h5 class="card__category">Category</h5>
+        <h2 class="card__title">Title Goes Here</h2>
+        <p class="card__text">Lorem ipsum dolor sit amet consectetur    adipisicing elit nulla cumque. massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at tempor commodo ullamcorper.</p>
+    </div>
+    </div>
+    
+    <div class="card card-item-04">
+    <div class="card__image-wrapper">
+    <img class="card__image" src="https://images.pexels.com/photos/4319752/pexels-photo-4319752.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="Surfers Surfing" width="280" height="420">
+    </div>
+    <div class="card__content">
+        <h5 class="card__category">Category</h5>
+        <h2 class="card__title">Title Goes Here</h2>
+        <p class="card__text">Lorem ipsum dolor sit amet consectetur    adipisicing elit nulla cumque. massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at tempor commodo ullamcorper.</p>
+    </div>
+    </div>
+    
+    
+    </div>
+</body>
+</html>
